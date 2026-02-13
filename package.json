@@ -1,0 +1,23 @@
+{
+  "name": "course",
+  "version": "1.0.0",
+  "description": "js pure application",
+  "keywords": [
+    "js"
+  ],
+  "license": "ISC",
+  "author": "Ya.dev <ya.devvvvvv@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 1356 --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "clas": "^0.0.9",
+    "classes": "^0.3.0"
+  }
+}
