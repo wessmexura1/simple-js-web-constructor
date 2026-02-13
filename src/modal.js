@@ -33,5 +33,5 @@ export const modal = [
     }),
 
 
-    new ImageBlock ( image, { imgStyles: { "max-width": "62.5rem" }, alt: "test alt text" })
+    new ImageBlock (image, { imgStyles: { "max-width": "62.5rem" }, alt: "test alt text" })
 ]

@@ -17,6 +17,7 @@
     "parcel-bundler": "^1.12.5"
   },
   "dependencies": {
+    "c": "^1.1.1",
     "clas": "^0.0.9",
     "classes": "^0.3.0"
   }

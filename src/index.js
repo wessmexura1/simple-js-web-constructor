@@ -1,12 +1,15 @@
 import { modal } from "/modal";
-import { templates } from "/templates";
+import { Site } from "./classes/site";
 import "/styles/main.css";
+import { Sidebar } from "./classes/sidebar";
 
-const $site = document.querySelector("#site");
+const site = new Site("#site");
 
-modal.forEach((block) => {
-    const toHtml = templates[block.type];
-    if (toHtml) {
-        $site.insertAdjacentHTML("beforeend", toHtml(block));
-    }
-});
+site.render(modal);
+
+const updCallback = (newBlock) => {
+    modal.push(newBlock);
+    site.render(modal);
+};
+
+const sidebar = new Sidebar("#panel", updCallback);
